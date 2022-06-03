@@ -1,0 +1,9 @@
+.container {
+    height: 85vh;
+    background-image: url("../assets/prof_img/mic.jpg");
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

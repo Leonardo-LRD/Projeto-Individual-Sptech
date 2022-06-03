@@ -1,0 +1,10 @@
+.container {
+    height: 85vh;
+    background-image: url("../assets/back-view-of-teenager-with-skateboard-and-copy-space-at-the-skatepark.jpg");
+    background-position: bottom;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
