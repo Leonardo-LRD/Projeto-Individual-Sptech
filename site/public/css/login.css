@@ -1,6 +1,6 @@
 .container {
     height: 100vh;
-    background-image: url("../assets/prof_img/mic.jpg");
+    background-image: url("../assets/img/login.jpg");
     background-position: top;
     background-attachment: fixed;
     display: flex;
@@ -10,4 +10,5 @@
 
 .banner .container .card {
     margin: 6em 33em 0 0;
+    background-color: #e4e4e46e;
 }
