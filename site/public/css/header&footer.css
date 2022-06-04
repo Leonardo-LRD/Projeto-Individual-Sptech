@@ -27,27 +27,8 @@
     background: radial-gradient(circle, transparent 60%, #000000 100%);
 }
 
-/* 1 */
-/* ::-webkit-scrollbar-track {
-    margin: 3vh;
-    background-color: #333333;
-    border-radius: 100vw;
-}
-::-webkit-scrollbar-track:hover {
-    background-color: #666666;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #777777;
-    border-radius: 100vw;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: #ffffff;
-    border: #000000 solid .1vw;
-} */
-
-/* 2 */
-/* ::-webkit-scrollbar-track {
+/* BRANCO */
+::-webkit-scrollbar-track {
     margin: 3vh;
     background-color: #333333;
     border-radius: 100vw;
@@ -62,10 +43,10 @@
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
-} */
+}
 
-/* 3 */
-::-webkit-scrollbar-track {
+/* FADE P&B */
+/* ::-webkit-scrollbar-track {
     margin: 3vh;
     background-color: #333333;
     border-radius: 100vw;
@@ -81,7 +62,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background: radial-gradient(circle, #000000 0%, #ffffff 100%);
     border: #ffffff solid .1vw;
-}
+} */
 /* ================================ SCROLLBAR ================================ */
 
 
@@ -149,7 +130,8 @@ header .menu-login {
 
 
 /* =============================== FORMULÁRIOS =============================== */
-button {
+/* preto */
+/* button {
     margin: 0.8em 0;
     padding: 10px 15px;
     width: 120px;
@@ -165,27 +147,73 @@ button {
 }
 button:hover {
     box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 3px #ffffff
+} */
+button {
+    margin: 0.8em 0;
+    padding: 10px 15px;
+    width: 120px;
+    align-self: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    /* text-shadow: #111 1px 1px 4px; */
+    background-color: #111111;
+    border: 1px white solid;
+    border-radius: 5px;
+    /* box-shadow: 0 0 5px; */
+    transition: all 150ms ease-in-out;
+}
+button:hover {
+    /* color: #000000; */
+    /* background-color: #71c4d3; */
+    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 3px #ffffff
 }
 
-input {
+/* preto */
+/* input {
     margin: 8px 0;
     padding: 10px;
     width: 20em;
     background-color: rgba(212, 217, 216, 1);
     border: 2px solid #e1a77e;
     border-radius: 8px;
+} */
+input {
+    margin: 8px 0;
+    padding: 10px;
+    width: 20em;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #e1a77e;
+    border-radius: 8px;
+}
+input::placeholder {
+    color: #444444;
 }
 
-.banner .container .card {
-    background-color: #111111;
-    height: fit-content;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
+/* preto */
+/* .banner .container .card {
+    /* height: fit-content; */
+    /* display: flex;
     align-items: center;
+    flex-direction: column;
+    width: 400px;
+    color: #ffffff;
+    background-color: #111111;
     border-radius: 1.5em;
-    box-shadow: black 0 0 50px;
+    box-shadow: black 0 0 30px;
+} */ 
+.banner .container .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    color: #111111;
+    background-color: #e4e4e442;
+    letter-spacing: 1px;
+    text-shadow: #fff 2px 2px 5px;
+    border-radius: 1.5em;
+    box-shadow: black 0 0 30px; 
 }
 
 .card {
@@ -194,6 +222,7 @@ input {
 }
 
 .card p {
+    text-transform: uppercase;
     padding: .8em 0 .2em 0;
     font-size: 30px;
 }

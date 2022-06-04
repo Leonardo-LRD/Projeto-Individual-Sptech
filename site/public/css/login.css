@@ -1,9 +1,13 @@
 .container {
-    height: 85vh;
+    height: 100vh;
     background-image: url("../assets/prof_img/mic.jpg");
     background-position: top;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.banner .container .card {
+    margin: 6em 33em 0 0;
 }
