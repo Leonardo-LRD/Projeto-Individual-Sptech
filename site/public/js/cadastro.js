@@ -104,20 +104,23 @@ function cadastrar() {
             }, "2000")
 
             limparFormulario();
-            finalizarAguardar();
+            // finalizarAguardar();
         } 
         else {
             throw ("Houve um erro ao tentar realizar o cadastro!");
         }
     }).catch(function (resposta) {
-        console.log(`#ERRO: ${resposta}`);
-        finalizarAguardar();
+        console.log(resposta);
+        // finalizarAguardar();
     });
 
     return false;
 }
 
 
-function sumirMensagem() {
-    cardErro.style.display = "none"
+function limparFormulario() {
+    nome_input.value = "";
+    email_input.value = "";
+    senha_input.value = "";
+    confirmacao_senha_input.value = "";
 }

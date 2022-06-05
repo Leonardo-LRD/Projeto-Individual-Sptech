@@ -27,7 +27,8 @@
     background: radial-gradient(circle, transparent 60%, #000000 100%);
 }
 
-/* BRANCO */
+
+/* BRANCO ================================== */
 ::-webkit-scrollbar-track {
     margin: 3vh;
     background-color: #333333;
@@ -44,8 +45,10 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
 }
+/* BRANCO ================================== */
 
-/* FADE P&B */
+
+/* FADE P&B ================================ */
 /* ::-webkit-scrollbar-track {
     margin: 3vh;
     background-color: #333333;
@@ -63,6 +66,7 @@
     background: radial-gradient(circle, #000000 0%, #ffffff 100%);
     border: #ffffff solid .1vw;
 } */
+/* FADE P&B ================================ */
 /* ================================ SCROLLBAR ================================ */
 
 
@@ -170,66 +174,8 @@ input::placeholder {
     box-shadow: black 0 0 30px;
 } */
 
-/* TRANSPARENTE */
-button {
-    margin: 0.8em 0;
-    padding: 10px 15px;
-    width: 120px;
-    align-self: center;
-    cursor: pointer;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #111111;
-    border: 1px #ffffff solid;
-    border-radius: 5px;
-    box-shadow: 0 0 5px;
-    transition: all 150ms ease-in-out;
-}
-button:hover {
-    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 3px #ffffff
-}
 
-input {
-    margin: 8px 0;
-    padding: 10px;
-    width: 20em;
-    color: #000000;
-    background-color: #ffffff;
-    border: 2px solid #e1a77e;
-    border-radius: 8px;
-}
-input::placeholder {
-    color: #444444;
-}
-
-.banner .container .card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 400px;
-    color: #111111;
-    background-color: #e4e4e442;
-    letter-spacing: 1px;
-    text-shadow: #fff 2px 2px 5px;
-    border-radius: 1.5em;
-    box-shadow: #000000 0 0 30px; 
-    text-transform: uppercase;
-}
-
-.card {
-    display: flex;
-    justify-content: space-around;
-}
-
-.card p {
-    padding: .8em 0 .2em 0;
-    font-size: 30px;
-}
-
-.banner #div_erros_login {
-    margin-top: 15px;
-}
-
+/* MENSAGEM ================================= */
 .alerta_erro {
     display: flex;
     justify-content: flex-end;
@@ -251,12 +197,35 @@ input::placeholder {
     font-weight: 500;
     font-size: 20px;
 }
+/* MENSAGEM ================================= */
 
-.formulario .tipo_campo {
-    padding-top: 15px;
-    font-size: 20px;
-    text-shadow: #fff 3px 3px 5px;
 
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* TRANSPARENTE ============================== */
+.banner .container .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    color: #111111;
+    background-color: #e4e4e442;
+    letter-spacing: 1px;
+    text-shadow: #fff 2px 2px 5px;
+    border-radius: 1.5em;
+    box-shadow: #000000 0 0 30px; 
+    text-transform: uppercase;
+}
+/* TRANSPARENTE ============================== */
+
+
+.card p {
+    padding: .8em 0 .2em 0;
+    font-size: 30px;
 }
 
 .formulario {
@@ -264,6 +233,48 @@ input::placeholder {
     flex-direction: column;
 }
 
+.formulario .tipo_campo {
+    padding-top: 15px;
+    font-size: 20px;
+    text-shadow: #fff 3px 3px 5px;
+}
+
+
+/* TRANSPARENTE ============================== */
+.formulario input {
+    margin: 8px 0;
+    padding: 10px;
+    width: 20em;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #e1a77e;
+    border-radius: 8px;
+}
+.formulario input::placeholder {
+    color: #444444;
+}
+
+.formulario button {
+    margin: 0.8em 0;
+    padding: 10px 15px;
+    width: 120px;
+    align-self: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #111111;
+    border: 1px #ffffff solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    transition: all 150ms ease-in-out;
+}
+.formulario button:hover {
+    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 3px #ffffff
+}
+/* TRANSPARENTE ============================== */
+
+
+/* CARREGAMENTO ============================== */
 .loading-div {
     width: 50px;
     margin: auto;
@@ -273,6 +284,12 @@ input::placeholder {
 .loading-div img {
     height: 50px;
     width: 50px;
+}
+/* CARREGAMENTO ============================== */
+
+
+.banner #div_erros_login {
+    margin-top: 15px;
 }
 /* =============================== FORMULÁRIOS =============================== */
 

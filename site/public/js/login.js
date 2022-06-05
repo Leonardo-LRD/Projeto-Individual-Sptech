@@ -75,8 +75,10 @@ function entrar() {
                 sessionStorage.ID_USUARIO = json.id;
 
                 setTimeout(function () {
-                    window.location = "albuns.html";
+                    window.location = "favorita.html";
                 }, 1000); // apenas para exibir o loading
+
+                limparFormulario();
             });
         } 
         else {
@@ -95,6 +97,7 @@ function entrar() {
 }
 
 
-function sumirMensagem() {
-    cardErro.style.display = "none"
+function limparFormulario() {
+    email_input.value = "";
+    senha_input.value = "";
 }

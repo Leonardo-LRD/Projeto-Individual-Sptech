@@ -16,7 +16,7 @@ function validarSessao() {
         // finalizarAguardar();
     } 
     else {
-        window.location = "../login.html";
+        window.location = "login.html";
     }
 }
 
@@ -25,7 +25,7 @@ function limparSessao() {
     // aguardar();
     sessionStorage.clear();
     // finalizarAguardar();
-    window.location = "../login.html";
+    window.location = "index.html";
 }
 
 
@@ -44,6 +44,12 @@ function finalizarAguardar(texto) {
     if (texto) {
         divErrosLogin.innerHTML = texto;
     }
+}
+
+
+// apaga mensagem
+function sumirMensagem() {
+    cardErro.style.display = "none"
 }
 
 
