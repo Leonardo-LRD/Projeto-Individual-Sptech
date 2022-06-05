@@ -144,20 +144,21 @@ header .menu-login {
 }
 button:hover {
     box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 3px #ffffff
-} */
-/* preto */
-/* input {
+}
+
+input {
     margin: 8px 0;
     padding: 10px;
     width: 20em;
     background-color: rgba(212, 217, 216, 1);
     border: 2px solid #e1a77e;
     border-radius: 8px;
-} */
+} 
+input::placeholder {
+    color: #444444;
+}
 
-
-/* preto */
-/* .banner .container .card {
+.banner .container .card {
     height: fit-content;
     display: flex;
     align-items: center;
@@ -286,7 +287,7 @@ footer {
     word-spacing: .2em;
 }
 
-a {
+footer a {
     color: #ffffff;
 }
 

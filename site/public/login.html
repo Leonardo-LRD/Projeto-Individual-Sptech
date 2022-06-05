@@ -60,7 +60,7 @@
 
                     <div class="formulario">
                         <span class="tipo_campo">E-mail:</span>
-                        <input id="email_input" type="text" placeholder="nome.email@provedor.com">
+                        <input id="email_input" type="text" placeholder="leonardo@email.com">
     
                         <span class="tipo_campo">Senha:</span>
                         <input id="senha_input" type="password" placeholder="********">
@@ -69,7 +69,31 @@
                     </div>
     
                     <div id="div_aguardar" class="loading-div">
-                        <img src="./assets/circle-loading.gif" id="loading-gif">
+                        <!-- <img src="./assets/circle-loading.gif" id="loading-gif"> -->
+
+                        <!-- <svg class="position-absolute mx-auto" viewBox="-2 -2 64 64" width="60" height="60" style="left:0;right:0">
+                            <path d="M30 0A30 30 0 0 1 60 30M30 60A30 30 0 0 1 0 30" fill="none" stroke="#6cf" stroke-width="2">
+                                <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.5s" keyTimes="0;1" values="0 30 30;180 30 30" keySplines="0.5 0 0.5 1" calcMode="spline"></animateTransform>
+                            </path>
+                        </svg> -->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                            <g transform="translate(25 50)">
+                                <circle cx="0" cy="0" r="6" fill="#111111">
+                                    <animateTransform attributeName="transform" type="scale" begin="-0.3333333333333333s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                            <g transform="translate(50 50)">
+                                <circle cx="0" cy="0" r="6" fill="#111111">
+                                    <animateTransform attributeName="transform" type="scale" begin="-0.16666666666666666s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                            <g transform="translate(75 50)">
+                                <circle cx="0" cy="0" r="6" fill="#111111">
+                                    <animateTransform attributeName="transform" type="scale" begin="0s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                        </svg>
                     </div>
     
                     <div id="div_erros_login"></div>

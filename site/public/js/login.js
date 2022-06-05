@@ -4,15 +4,49 @@ function entrar() {
     var emailVar = email_input.value;
     var senhaVar = senha_input.value;
 
-    if (emailVar == "" || senhaVar == "") {
+    // Variáveis de validação:
+    var ipt_vazio = emailVar == "" || senhaVar == "";
+    var senha_min = senhaVar.length < 8;
+    var valid_email = emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1;
+
+
+    // Validações: 
+    // Campos vazios
+    if (ipt_vazio) {
         cardErro.style.display = "block"
-        mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+        mensagem_erro.innerHTML = "Preencha os campos para realizar o login!";
+
         finalizarAguardar();
         return false;
     }
     else {
         setInterval(sumirMensagem, 5000)
     }
+
+    // Senha com 8 caracteres
+    if (senha_min) {
+        cardErro.style.display = "block"
+        mensagem_erro.innerHTML = "Senha deve conter no mínimo 8 caracteres";
+
+        finalizarAguardar();
+        return false;
+    }
+    else {
+        setInterval(sumirMensagem, 5000)
+    }
+
+    // Email com @ e .com
+    if (valid_email) {
+        cardErro.style.display = "block"
+        mensagem_erro.innerHTML = "E-mail inválido! Verifique e tente novamente.";
+
+        finalizarAguardar();
+        return false;
+    }
+    else {
+        setInterval(sumirMensagem, 5000)
+    }
+
 
     console.log("FORM LOGIN: ", emailVar);
     console.log("FORM SENHA: ", senhaVar);
@@ -41,13 +75,11 @@ function entrar() {
                 sessionStorage.ID_USUARIO = json.id;
 
                 setTimeout(function () {
-                    window.location = "./dashboard/cards.html";
+                    window.location = "albuns.html";
                 }, 1000); // apenas para exibir o loading
-
             });
-
-        } else {
-
+        } 
+        else {
             console.log("Houve um erro ao tentar realizar o login!");
 
             resposta.text().then(texto => {
@@ -55,13 +87,13 @@ function entrar() {
                 finalizarAguardar(texto);
             });
         }
-
     }).catch(function (erro) {
         console.log(erro);
     })
 
     return false;
 }
+
 
 function sumirMensagem() {
     cardErro.style.display = "none"
