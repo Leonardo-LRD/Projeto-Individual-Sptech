@@ -160,9 +160,10 @@ header .menu-login {
 } */
 /* PRETO ==================================== */
 /* TRANSPARENTE ============================== */
-.banner .card {
+/* .banner .card {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 400px;
     color: #111111;
@@ -171,6 +172,25 @@ header .menu-login {
     text-shadow: #fff 2px 2px 5px;
     border-radius: 1.5em;
     box-shadow: #000000 0 0 30px; 
+    text-transform: uppercase;
+} */
+
+.banner .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    color: #111111;
+    background: rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
+    text-shadow: #fff 2px 2px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.5em;
+    box-shadow: 0 25px 45px rgb(0, 0, 0); 
+    backdrop-filter: blur(4px);
     text-transform: uppercase;
 }
 /* TRANSPARENTE ============================== */
