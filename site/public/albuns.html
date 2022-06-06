@@ -19,8 +19,8 @@
     <title>Hip Hop Culture</title>
 </head>
 
-<!-- <body onload="validarSessao()"></body> -->
-<body>
+<body onload="validarSessao()"></body>
+<!-- <body> -->
     <!-- ============================================== MENU ============================================== -->
     <header>
         <div class="logo">
@@ -71,7 +71,7 @@
                 <span class="tooltip">Pesquisar...</span>
             </li>
 
-            <li>
+            <li id="fav_mus">
                 <a href="favorita.html">
                     <i class="fa-solid fa-heart"></i>
                     <span class="links_name">Musica Favorita</span>
@@ -79,7 +79,7 @@
                 <span class="tooltip">Musica Favorita</span>
             </li>
 
-            <li>
+            <li id="albuns">
                 <a href="#">
                     <i class="fa-solid fa-compact-disc"></i>
                     <span class="links_name">Albuns</span>
@@ -87,7 +87,7 @@
                 <span class="tooltip">Albuns</span>
             </li>
 
-            <li>
+            <li id="ranking">
                 <a href="ranking.html">
                     <i class="fa-solid fa-trophy"></i>
                     <span class="links_name">Ranking</span>
@@ -99,7 +99,7 @@
         <div class="profile_content">
             <div class="profile">
                 <div class="profile_details">
-                    <img src="#" alt="">
+                    <img id="profile_img" src="assets/prof_img/2.png" alt="">
 
                     <div class="name_job">
                         <div class="name"><span id="b_usuario">Usuário</span></div>
@@ -107,7 +107,7 @@
                     </div>
                 </div>
 
-                <i class="fa-solid fa-arrow-right-from-bracket" id="log-out" onclick="limparSessao()"></i>
+                <i onclick="limparSessao()" class="fa-solid fa-arrow-right-from-bracket" id="log-out"></i>
             </div>
         </div>
     </div>
@@ -117,7 +117,7 @@
     <!-- ============================================ CONTEUDO ============================================ -->
     <div class="home_content">
         <!-- CORPO ============================================== -->
-        <section class="corpo">
+        <section class="container">
 
         </section>
         <!-- CORPO ============================================== -->

@@ -31,7 +31,7 @@ function entrar(req, res) {
     if (email == undefined) {
         res.status(400).send("Seu email está undefined!");
     } else if (senha == undefined) {
-        res.status(400).send("Sua senha está indefinida!");
+        res.status(400).send("Sua senha está undefined!");
     } else {
         
         usuarioModel.entrar(email, senha)
@@ -94,9 +94,35 @@ function cadastrar(req, res) {
     }
 }
 
+function cadastrarMusicaFav(req, res) {
+    var musica = req.body.musicaServer;
+
+    // Faça as validações dos valores
+    if (musica == undefined) {
+        res.status(400).send("Sua musica favorita está undefined!");
+    } else {
+        usuarioModel.cadastrarMusicaFav(musica)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+}
+
 module.exports = {
     entrar,
     cadastrar,
+    cadastrarMusicaFav,
     listar,
     testar
 }

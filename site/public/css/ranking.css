@@ -1,12 +1,12 @@
 /* ============================ SIDE MENU - AGORA ============================ */
-.sidebar ul #albuns a {
+.sidebar ul #ranking a {
     border: 1px solid #fff;
     box-shadow: 0 0 8px;
 }
-.sidebar.active #albuns a {
+.sidebar.active #ranking a {
     color: #fff;
 }
-.sidebar ul #albuns a:hover {
+.sidebar ul #ranking a:hover {
     color: #000;
     background: #fff;
 }
@@ -15,6 +15,6 @@
 
 /* ================================== CORPO ================================== */
 .home_content .container {
-    background-image:url("../assets/img/vinil.jpg");
+    background-image:url("../assets/img/show.jpg");
 }
 /* ================================== CORPO ================================== */

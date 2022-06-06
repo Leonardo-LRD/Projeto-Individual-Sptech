@@ -1,0 +1,29 @@
+/* ============================ SIDE MENU - AGORA ============================ */
+.sidebar ul #fav_mus a {
+    border: 1px solid #fff;
+    box-shadow: 0 0 8px;
+}
+.sidebar.active #fav_mus a {
+    color: #fff;
+}
+.sidebar ul #fav_mus a:hover {
+    color: #000;
+    background: #fff;
+}
+/* ============================ SIDE MENU - AGORA ============================ */
+
+
+/* ================================== CORPO ================================== */
+.container {
+    height: 100vh;
+    /* background-position: top;
+    background-attachment: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_content .corpo {
+    background-image:url("../assets/img/system.jpg");
+}
+/* ================================== CORPO ================================== */
