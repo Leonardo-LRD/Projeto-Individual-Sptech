@@ -45,24 +45,13 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
 }
+#slc_vote::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+    border: #000 solid 0.1vw;
+}
 /* BRANCO ================================== */
-
-
 /* FADE P&B ================================ */
-/* ::-webkit-scrollbar-track {
-    margin: 3vh;
-    background-color: #333333;
-    border-radius: 100vw;
-}
-::-webkit-scrollbar-track:hover {
-    border: #ffffff solid .1vw;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #777777;
-    border-radius: 100vw;
-}
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
     background: radial-gradient(circle, #000000 0%, #ffffff 100%);
     border: #ffffff solid .1vw;
 } */
@@ -131,50 +120,6 @@ header .menu-login {
 
 
 /* =============================== FORMULÁRIOS =============================== */
-/* PRETO */
-/* button {
-    margin: 0.8em 0;
-    padding: 10px 15px;
-    width: 120px;
-    align-self: center;
-    cursor: pointer;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #000000;
-    border: 1px white solid;
-    border-radius: 5px;
-    box-shadow: 0 0 5px;
-    transition: all 150ms ease-in-out;
-}
-button:hover {
-    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 3px #ffffff
-}
-
-input {
-    margin: 8px 0;
-    padding: 10px;
-    width: 20em;
-    background-color: rgba(212, 217, 216, 1);
-    border: 2px solid #e1a77e;
-    border-radius: 8px;
-} 
-input::placeholder {
-    color: #444444;
-}
-
-.banner .container .card {
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 400px;
-    color: #ffffff;
-    background-color: #111111;
-    border-radius: 1.5em;
-    box-shadow: black 0 0 30px;
-} */
-
-
 /* MENSAGEM ================================= */
 .alerta_erro {
     display: flex;
@@ -206,8 +151,16 @@ input::placeholder {
 }
 
 
+/* PRETO ==================================== */
+/* .banner .card {
+    margin: 6em 33em 0 0;
+    color: #ffffff;
+    background-color: #111111;
+    text-shadow: none;
+} */
+/* PRETO ==================================== */
 /* TRANSPARENTE ============================== */
-.banner .container .card {
+.banner .card {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -233,25 +186,35 @@ input::placeholder {
     flex-direction: column;
 }
 
+
+/* PRETO ==================================== */
+/* .formulario .tipo_campo {
+    text-shadow: none;
+} */
+/* PRETO ==================================== */
+/* TRANSPARENTE ============================== */
 .formulario .tipo_campo {
     padding-top: 15px;
     font-size: 20px;
     text-shadow: #fff 3px 3px 5px;
 }
-
-
 /* TRANSPARENTE ============================== */
+
+
 .formulario input {
     margin: 8px 0;
     padding: 10px;
     width: 20em;
     color: #000000;
+    font-size: 15px;
     background-color: #ffffff;
-    border: 2px solid #e1a77e;
+    border: 2px solid #000000;
+    outline: #fff 1px solid;
     border-radius: 8px;
 }
 .formulario input::placeholder {
     color: #444444;
+    font-size: 15px;
 }
 
 .formulario button {
@@ -271,7 +234,6 @@ input::placeholder {
 .formulario button:hover {
     box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 3px #ffffff
 }
-/* TRANSPARENTE ============================== */
 
 
 /* CARREGAMENTO ============================== */

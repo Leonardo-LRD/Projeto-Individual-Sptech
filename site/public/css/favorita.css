@@ -1,3 +1,55 @@
+/* =============================== FORMULÁRIOS =============================== */
+/* PRETO ==================================== */
+.banner .card {
+    justify-content: center;
+    /* width: 50em; */
+    width: 100vh;
+    height: 60vh;
+    color: #ffffff;
+    background-color: #11111163;
+    border-radius: 0;
+    text-shadow: none;
+    box-shadow: #fff 0 0 40px; 
+    text-transform: none;
+}
+
+.card p {
+    padding: 1em 1.5em;
+    font-size: 30px;
+}
+
+.formulario .tipo_campo {
+    text-shadow: none;
+}
+
+.formulario #slc_vote {
+    margin: 1em 0;
+    width: 80vh;
+    padding: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    outline: #fff 1px solid;
+    border-radius: 8px;
+}
+
+.formulario button {
+    margin: 0.8em 0;
+    padding: 10px 15px;
+    width: 120px;
+    align-self: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #111111;
+    border: 1px #ffffff solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    transition: all 150ms ease-in-out;
+}
+/* PRETO ==================================== */
+/* =============================== FORMULÁRIOS =============================== */
+
 /* ============================ SIDE MENU - AGORA ============================ */
 .sidebar ul #fav_mus a {
     border: 1px solid #fff;
@@ -14,16 +66,11 @@
 
 
 /* ================================== CORPO ================================== */
-.container {
+.home_content .container {
     height: 100vh;
-    /* background-position: top;
-    background-attachment: fixed; */
+    background-image:url("../assets/img/system.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.home_content .corpo {
-    background-image:url("../assets/img/system.jpg");
 }
 /* ================================== CORPO ================================== */

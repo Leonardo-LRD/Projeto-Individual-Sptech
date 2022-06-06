@@ -117,58 +117,78 @@
     <!-- ============================================ CONTEUDO ============================================ -->
     <div class="home_content">
         <!-- CORPO ============================================== -->
-        <section class="corpo">
+        <section class="container">
             <div class="banner">
                 <div class="alerta_erro">
                     <div class="card_erro" id="cardErro">
                         <span id="mensagem_erro"></span>
                     </div>
                 </div>
-    
-                <div class="container">
-                    <div class="card">
-                        <p>Vote na sua música favorita do Sabotage!</p>
-    
-                        <div class="formulario">
-                            <select id="slc_vote">
-                                <option value="0">Selecionar</option>
-                                <option value="1">Um Bom Lugar</option>
-                            </select>
-        
-                            <button onclick="cadastrarMusicaFav()" class="btn">Votar</button>
-                        </div>
-        
-                        <div id="div_aguardar" class="loading-div">
-                            <!-- <img src="./assets/circle-loading.gif" id="loading-gif"> -->
-    
-                            <!-- <svg class="position-absolute mx-auto" viewBox="-2 -2 64 64" width="60" height="60" style="left:0;right:0">
-                                <path d="M30 0A30 30 0 0 1 60 30M30 60A30 30 0 0 1 0 30" fill="none" stroke="#6cf" stroke-width="2">
-                                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.5s" keyTimes="0;1" values="0 30 30;180 30 30" keySplines="0.5 0 0.5 1" calcMode="spline"></animateTransform>
-                                </path>
-                            </svg> -->
-    
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
-                                <g transform="translate(25 50)">
-                                    <circle cx="0" cy="0" r="6" fill="#111111">
-                                        <animateTransform attributeName="transform" type="scale" begin="-0.3333333333333333s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
-                                    </circle>
-                                </g>
-                                <g transform="translate(50 50)">
-                                    <circle cx="0" cy="0" r="6" fill="#111111">
-                                        <animateTransform attributeName="transform" type="scale" begin="-0.16666666666666666s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
-                                    </circle>
-                                </g>
-                                <g transform="translate(75 50)">
-                                    <circle cx="0" cy="0" r="6" fill="#111111">
-                                        <animateTransform attributeName="transform" type="scale" begin="0s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
-                                    </circle>
-                                </g>
-                            </svg>
-                        </div>
-        
-                        <div id="div_erros_login"></div>
+            
+                <div class="card">
+                    <p>Vote na sua música favorita do Sabotage!</p>
+            
+                    <div class="formulario">
+                        <select id="slc_vote">
+                            <option value="0">Selecionar...</option>
+                            <option value="1">A cultura</option>
+                            <option value="2">Cabeça de Nego</option>
+                            <option value="3">Canão foi tão bom</option>
+                            <option value="4">Cantando pro Santo</option>
+                            <option value="5">Cigarro mata</option>
+                            <option value="6">Cocaína</option>
+                            <option value="7">Gíria Criminal</option>
+                            <option value="8">Marginal Alado</option>
+                            <option value="9">Mosquito</option>
+                            <option value="10">Mun-Rá</option>
+                            <option value="11">Na Zona Sul</option>
+                            <option value="12">No Brooklin</option>
+                            <option value="13">O Enxame</option>
+                            <option value="14">O Gatilho</option>
+                            <option value="15">O Gatilho 2</option>
+                            <option value="16">O Invasor</option>
+                            <option value="17">País da Fome</option>
+                            <option value="18">País da Fome, Pt. II</option>
+                            <option value="19">Rap é Compromisso!</option>
+                            <option value="20">Respeito é Pra Quem Tem</option>
+                            <option value="21">Sai da Frente</option>
+                            <option value="22">Um Bom Lugar</option>
+                            <option value="23">Vamo Fuma</option>
+                            <option value="24">Vira Lata S/A</option>
+                        </select>
+            
+                        <button onclick="cadastrarMusicaFav()" class="btn">Votar</button>
+                    </div>
+            
+                    <div id="div_aguardar" class="loading-div">
+                        <!-- <img src="./assets/circle-loading.gif" id="loading-gif"> -->
+            
+                        <!-- <svg class="position-absolute mx-auto" viewBox="-2 -2 64 64" width="60" height="60" style="left:0;right:0">
+                            <path d="M30 0A30 30 0 0 1 60 30M30 60A30 30 0 0 1 0 30" fill="none" stroke="#6cf" stroke-width="2">
+                                <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.5s" keyTimes="0;1" values="0 30 30;180 30 30" keySplines="0.5 0 0.5 1" calcMode="spline"></animateTransform>
+                            </path>
+                        </svg> -->
+            
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                            <g transform="translate(25 50)">
+                                <circle cx="0" cy="0" r="6" fill="#111111">
+                                    <animateTransform attributeName="transform" type="scale" begin="-0.3333333333333333s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                            <g transform="translate(50 50)">
+                                <circle cx="0" cy="0" r="6" fill="#111111">
+                                    <animateTransform attributeName="transform" type="scale" begin="-0.16666666666666666s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                            <g transform="translate(75 50)">
+                                <circle cx="0" cy="0" r="6" fill="#111111">
+                                    <animateTransform attributeName="transform" type="scale" begin="0s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+                                </circle>
+                            </g>
+                        </svg>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- CORPO ============================================== -->
 

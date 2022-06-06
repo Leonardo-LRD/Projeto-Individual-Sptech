@@ -1,5 +1,5 @@
+/* ================================== CORPO ================================== */
 .container {
-    height: 100vh;
     background-image: url("../assets/img/login.jpg");
     background-position: top;
     background-attachment: fixed;
@@ -7,8 +7,20 @@
     align-items: center;
     justify-content: center;
 }
+/* ================================== CORPO ================================== */
 
-.banner .container .card {
+
+/* =============================== FORMULÁRIOS =============================== */
+/* PRETO ==================================== */
+.banner .card {
     margin: 6em 33em 0 0;
-    background-color: #e4e4e46e;
+    color: #ffffff;
+    background-color: #111111;
+    text-shadow: none;
 }
+
+.formulario .tipo_campo {
+    text-shadow: none;
+}
+/* PRETO ==================================== */
+/* =============================== FORMULÁRIOS =============================== */

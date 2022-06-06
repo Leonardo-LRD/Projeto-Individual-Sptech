@@ -76,7 +76,7 @@ function entrar() {
 
                 setTimeout(function () {
                     window.location = "favorita.html";
-                }, 1000); // apenas para exibir o loading
+                }, 2000); // apenas para exibir o loading
 
                 limparFormulario();
             });

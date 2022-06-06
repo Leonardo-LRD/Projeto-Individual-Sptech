@@ -43,6 +43,7 @@ function cadastrarMusicaFav() {
 
             setTimeout(() => {
                 // window.location = "login.html";
+                finalizarAguardar();
             }, "2000")
 
             limparFormulario();
