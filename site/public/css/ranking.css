@@ -27,5 +27,13 @@ header {
 /* ================================== CORPO ================================== */
 .home_content .container {
     background-image:url("../assets/img/ranking.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph {
+    width: 80%;
+    padding-top: 85px;
 }
 /* ================================== CORPO ================================== */

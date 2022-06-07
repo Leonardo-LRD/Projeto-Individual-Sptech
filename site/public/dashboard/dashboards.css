@@ -1,13 +1,12 @@
 /* pagina mural */
 
-*,
+/* *,
 body {
   font-family: "Exo 2", sans-serif;
 }
 
 .dash-right .avisos {
   width: 100%;
-  /* border: 3px solid pink; */
   color: rgb(216, 216, 216);
   font-family: "Exo 2", sans-serif;
 }
@@ -37,7 +36,6 @@ body {
 
 .dash-right .avisos .div-form textarea {
   width: 100%;
-  /* color: #E6005A; */
   border: 3px solid #e6005a;
   background-color: white;
   border-radius: 5px;
@@ -101,9 +99,9 @@ body {
 
 .div-buttons > * {
   margin-left: 30px;
-}
+} */
 
-/* pagina graficos */
+/* pagina graficos ======================================================== */
 
 .dash-header {
   background-color: #212124;

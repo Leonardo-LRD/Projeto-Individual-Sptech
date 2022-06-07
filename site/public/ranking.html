@@ -9,6 +9,7 @@
     <link rel="icon" href="assets/icon/white_icon.jpg">
     
     <script src="js/funcoes.js"></script>
+    <script type="text/javascript" src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
 
     <link rel="stylesheet" href="css/header&footer.css">
     <link rel="stylesheet" href="css/side-menu.css">
@@ -19,7 +20,7 @@
     <title>Hip Hop Culture | Ranking</title>
 </head>
 
-<body onload="validarSessao()"></body>
+<body onload="validarSessao(), obterDadosGrafico()"></body>
 <!-- <body> -->
     <!-- ============================================== MENU ============================================== -->
     <header>
@@ -109,7 +110,9 @@
     <div class="home_content">
         <!-- CORPO ============================================== -->
         <section class="container">
-
+            <div class="graph">
+                <canvas id="canvas_grafico"></canvas>
+            </div>
         </section>
         <!-- CORPO ============================================== -->
 
@@ -145,5 +148,6 @@
 </body>
 
 <script src="js/menu.js"></script>
+<script src="js/ranking.js"></script>
 
 </html>
