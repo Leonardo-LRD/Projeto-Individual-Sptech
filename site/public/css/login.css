@@ -2,7 +2,6 @@
 .container {
     background-image: url("../assets/img/login.jpg");
     background-position: top;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -37,9 +37,11 @@ header {
 }
 #album2 {
     background-image: url(../assets/img/album2.webp);
+    background-position: center;
 }
 #album3 {
     background-image: url(../assets/img/album3.jpg);
+    background-position: center;
 }
 #album4 {
     background-image: url(../assets/img/album4.jpg);
@@ -68,6 +70,7 @@ header {
 .conteudo img {
     width: 380px;
     height: 380px;
+    cursor: pointer;
 }
 
 figure {

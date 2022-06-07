@@ -27,6 +27,8 @@ header {
 /* ================================== CORPO ================================== */
 .home_content .container {
     background-image:url("../assets/img/ranking.jpg");
+    background-position: center;
+    background-attachment: local;
     display: flex;
     align-items: center;
     justify-content: center;
