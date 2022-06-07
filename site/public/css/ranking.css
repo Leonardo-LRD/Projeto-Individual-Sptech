@@ -13,8 +13,19 @@
 /* ============================ SIDE MENU - AGORA ============================ */
 
 
+/* ================================== MENU ================================== */
+header {
+    padding-right: 0.5em;
+    justify-content: flex-end;
+    position: absolute;
+    /* caso fique ruim no notebook, aumentar fonte */
+    font-size: 20px;
+}
+/* ================================== MENU ================================== */
+
+
 /* ================================== CORPO ================================== */
 .home_content .container {
-    background-image:url("../assets/img/show.jpg");
+    background-image:url("../assets/img/ranking.jpg");
 }
 /* ================================== CORPO ================================== */

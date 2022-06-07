@@ -21,6 +21,7 @@ body {
     width: 78px;
     background: #000;
     transition: all 0.5s ease;
+    z-index: 97;
 }
 .sidebar.active {
     width: 240px;
@@ -111,6 +112,7 @@ body {
     opacity: 0;
     pointer-events: none;
     display: block;
+    z-index: 98;
 }
 .sidebar.active ul li .tooltip {
     display: none;
@@ -198,7 +200,6 @@ body {
     background: none;
     transition: all 0.3s ease;
 }
-
 .sidebar.active .profile_content .profile {
     /* height: 57.38px; */
     background: #222;
@@ -211,7 +212,6 @@ body {
     pointer-events: none;
     white-space: nowrap;
 }
-
 .sidebar.active .profile .profile_details {
     opacity: 1;
     pointer-events: auto;
@@ -227,7 +227,6 @@ body {
 .profile .profile_details .name_job {
     margin-left: 10px;
 }
-
 .profile .profile_details .name {
     font-size: 15px;
 }
@@ -249,12 +248,14 @@ body {
     background: #222;
     cursor: pointer;
 }
-
 .sidebar.active .profile #log-out {
     left: 88%;
     background: none;
 }
+/* ================================ SIDE MENU ================================ */
 
+
+/* ================================ WRAP CONTEUDO ================================ */
 .home_content {
     position: absolute;
     height: 100%;
@@ -267,4 +268,4 @@ body {
     width: calc(100% - 240px);
     left: 240px;
 }
-/* ================================ SIDE MENU ================================ */
+/* ================================ WRAP CONTEUDO ================================ */

@@ -27,7 +27,6 @@
     background: radial-gradient(circle, transparent 60%, #000000 100%);
 }
 
-
 /* BRANCO ================================== */
 ::-webkit-scrollbar-track {
     margin: 3vh;
@@ -50,6 +49,7 @@
     border: #000 solid 0.1vw;
 }
 /* BRANCO ================================== */
+
 /* FADE P&B ================================ */
 /* ::-webkit-scrollbar-thumb:hover {
     background: radial-gradient(circle, #000000 0%, #ffffff 100%);
@@ -70,6 +70,7 @@ header {
     position: fixed;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 7), transparent);
+    z-index: 96;
 }
 
 header ul li {
@@ -118,7 +119,6 @@ header .menu-login {
 /* ================================== MENU ================================== */
 
 
-
 /* =============================== FORMULÁRIOS =============================== */
 /* MENSAGEM ================================= */
 .alerta_erro {
@@ -144,12 +144,10 @@ header .menu-login {
 }
 /* MENSAGEM ================================= */
 
-
 .card {
     display: flex;
     justify-content: space-around;
 }
-
 
 /* PRETO ==================================== */
 /* .banner .card {
@@ -159,6 +157,7 @@ header .menu-login {
     text-shadow: none;
 } */
 /* PRETO ==================================== */
+
 /* TRANSPARENTE ============================== */
 /* .banner .card {
     display: flex;
@@ -190,11 +189,10 @@ header .menu-login {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 1.5em;
     box-shadow: 0 25px 45px rgb(0, 0, 0); 
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(1px);
     text-transform: uppercase;
 }
 /* TRANSPARENTE ============================== */
-
 
 .card p {
     padding: .8em 0 .2em 0;
@@ -206,12 +204,12 @@ header .menu-login {
     flex-direction: column;
 }
 
-
 /* PRETO ==================================== */
 /* .formulario .tipo_campo {
     text-shadow: none;
 } */
 /* PRETO ==================================== */
+
 /* TRANSPARENTE ============================== */
 .formulario .tipo_campo {
     padding-top: 15px;
@@ -219,7 +217,6 @@ header .menu-login {
     text-shadow: #fff 3px 3px 5px;
 }
 /* TRANSPARENTE ============================== */
-
 
 .formulario input {
     margin: 8px 0;
@@ -255,7 +252,6 @@ header .menu-login {
     box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 3px #ffffff
 }
 
-
 /* CARREGAMENTO ============================== */
 .loading-div {
     width: 50px;
@@ -268,7 +264,6 @@ header .menu-login {
     width: 50px;
 }
 /* CARREGAMENTO ============================== */
-
 
 .banner #div_erros_login {
     margin-top: 15px;
@@ -289,6 +284,10 @@ footer {
 footer a {
     color: #ffffff;
 }
+.footer-content a:hover {
+    color: #cc1805;
+    cursor: pointer;
+}
 
 .footer-content {
     display: flex;
@@ -306,11 +305,6 @@ footer a {
 
 .footer-content span {
     color: #e1a77e;
-}
-
-.footer-content a:hover {
-    color: #cc1805;
-    cursor: pointer;
 }
 
 .socials {

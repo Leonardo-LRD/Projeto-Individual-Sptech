@@ -9,18 +9,15 @@ html {
     background-image:url("../assets/img/hiphop.jpg");
     background-position: center;
 }
-
 #section_skt {
     background-image:url("../assets/img/sk8.jpg");
     background-position: top;
     background-attachment: fixed;
 }
-
 #section_rap {
     background-image:url("../assets/img/rap.jpg");
     background-position: top;
 }
-
 #section_sabota {
     background-image:url("../assets/img/sabota.jpg");
     background-position: top;

@@ -96,12 +96,14 @@ function cadastrar(req, res) {
 
 function cadastrarMusicaFav(req, res) {
     var musica = req.body.musicaServer;
+    var id = req.body.idServer;
 
     // Faça as validações dos valores
-    if (musica == undefined) {
+    if (musica == undefined || id == undefined) {
         res.status(400).send("Sua musica favorita está undefined!");
+        res.status(400).send("O id de usuario está undefined!");
     } else {
-        usuarioModel.cadastrarMusicaFav(musica)
+        usuarioModel.cadastrarMusicaFav(musica, id)
             .then(
                 function (resultado) {
                     res.json(resultado);

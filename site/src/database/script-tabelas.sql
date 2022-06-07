@@ -12,12 +12,12 @@ CREATE TABLE musica (
 	titulo VARCHAR(100)
 );
 
-+-----------+--------------+------+-----+---------+----------------+
-| Field     | Type         | Null | Key | Default | Extra          |
-+-----------+--------------+------+-----+---------+----------------+
-| id_musica | int          | NO   | PRI | NULL    | auto_increment |
-| titulo    | varchar(100) | YES  |     | NULL    |                |
-+-----------+--------------+------+-----+---------+----------------+
+-- +-----------+--------------+------+-----+---------+----------------+
+-- | Field     | Type         | Null | Key | Default | Extra          |
+-- +-----------+--------------+------+-----+---------+----------------+
+-- | id_musica | int          | NO   | PRI | NULL    | auto_increment |
+-- | titulo    | varchar(100) | YES  |     | NULL    |                |
+-- +-----------+--------------+------+-----+---------+----------------+
 
 
 CREATE TABLE usuario (
@@ -29,15 +29,15 @@ CREATE TABLE usuario (
 	FOREIGN KEY (fk_musica) REFERENCES musica (id_musica)
 );
 
-+------------+-------------+------+-----+---------+----------------+
-| Field      | Type        | Null | Key | Default | Extra          |
-+------------+-------------+------+-----+---------+----------------+
-| id_usuario | int         | NO   | PRI | NULL    | auto_increment |
-| nome       | varchar(50) | YES  |     | NULL    |                |
-| email      | varchar(60) | YES  |     | NULL    |                |
-| senha      | varchar(20) | YES  |     | NULL    |                |
-| fk_musica  | int         | YES  | MUL | NULL    |                |
-+------------+-------------+------+-----+---------+----------------+
+-- +------------+-------------+------+-----+---------+----------------+
+-- | Field      | Type        | Null | Key | Default | Extra          |
+-- +------------+-------------+------+-----+---------+----------------+
+-- | id_usuario | int         | NO   | PRI | NULL    | auto_increment |
+-- | nome       | varchar(50) | YES  |     | NULL    |                |
+-- | email      | varchar(60) | YES  |     | NULL    |                |
+-- | senha      | varchar(20) | YES  |     | NULL    |                |
+-- | fk_musica  | int         | YES  | MUL | NULL    |                |
+-- +------------+-------------+------+-----+---------+----------------+
 
 
 INSERT INTO musica(titulo) VALUES 
@@ -66,34 +66,34 @@ INSERT INTO musica(titulo) VALUES
 ('Vamo Fuma'),
 ('Vira Lata S/A');
 
-+-----------+-------------------------+
-| id_musica | titulo                  |
-+-----------+-------------------------+
-|         1 | A cultura               |
-|         2 | Cabeça de Nego          |
-|         3 | Canão foi tão bom       |
-|         4 | Cantando pro Santo      |
-|         5 | Cigarro mata            |
-|         6 | Cocaína                 |
-|         7 | Gíria Criminal          |
-|         8 | Marginal Alado          |
-|         9 | Mosquito                |
-|        10 | Mun-Rá                  |
-|        11 | Na Zona Sul             |
-|        12 | No Brooklin             |
-|        13 | O Enxame                |
-|        14 | O Gatilho               |
-|        15 | O Gatilho 2             |
-|        16 | O Invasor               |
-|        17 | País da Fome            |
-|        18 | País da Fome, Pt. II    |
-|        19 | Rap é Compromisso!      |
-|        20 | Respeito é Pra Quem Tem |
-|        21 | Sai da Frente           |
-|        22 | Um Bom Lugar            |
-|        23 | Vamo Fuma               |
-|        24 | Vira Lata S/A           |
-+-----------+-------------------------+
+-- +-----------+-------------------------+
+-- | id_musica | titulo                  |
+-- +-----------+-------------------------+
+-- |         1 | A cultura               |
+-- |         2 | Cabeça de Nego          |
+-- |         3 | Canão foi tão bom       |
+-- |         4 | Cantando pro Santo      |
+-- |         5 | Cigarro mata            |
+-- |         6 | Cocaína                 |
+-- |         7 | Gíria Criminal          |
+-- |         8 | Marginal Alado          |
+-- |         9 | Mosquito                |
+-- |        10 | Mun-Rá                  |
+-- |        11 | Na Zona Sul             |
+-- |        12 | No Brooklin             |
+-- |        13 | O Enxame                |
+-- |        14 | O Gatilho               |
+-- |        15 | O Gatilho 2             |
+-- |        16 | O Invasor               |
+-- |        17 | País da Fome            |
+-- |        18 | País da Fome, Pt. II    |
+-- |        19 | Rap é Compromisso!      |
+-- |        20 | Respeito é Pra Quem Tem |
+-- |        21 | Sai da Frente           |
+-- |        22 | Um Bom Lugar            |
+-- |        23 | Vamo Fuma               |
+-- |        24 | Vira Lata S/A           |
+-- +-----------+-------------------------+
 
 /* altere esta tabela de acordo com o que está em INSERT de sua API do arduino */
 
