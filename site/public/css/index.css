@@ -22,4 +22,12 @@ html {
     background-image:url("../assets/img/sabota.jpg");
     background-position: top;
 }
+
+.container .conteudo {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* ================================== CORPO ================================== */

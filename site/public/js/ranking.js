@@ -90,7 +90,7 @@ function plotarGrafico(resposta) {
 
     for (i = 0; i < resposta.length; i++) {
         var registro = resposta[i];
-        dados.labels.push(registro.nome);
+        dados.labels.push(registro.titulo);
         dados.datasets[0].data.push(registro.votos);
         // dados.datasets[1].data.push(registro.temperatura);
     }
