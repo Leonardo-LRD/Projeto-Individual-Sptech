@@ -91,6 +91,7 @@ a {
     box-shadow: 2px 10px 30px hsla(0, 0%, 0%, 0.9);
     /* box-shadow: 3px 3px 30px hsla(0, 0%, 0%, 0.9); */
     transform: rotate(0);
+    filter: grayscale(50%);
 }
 .conteudo figure img:hover {
     transform: rotateX(11deg) rotateY(16deg) rotateZ(356deg);
@@ -135,12 +136,12 @@ a {
 }
 
 .conteudo button {
-    margin: 0.8em 0;
-    padding: 10px 15px;
-    width: 120px;
+    margin: 1em 0;
+    padding: 17px 20px;
+    width: 170px;
     align-self: center;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 25px;
     color: #ffffff;
     background-color: #111111;
     border: 1px #ffffff solid;

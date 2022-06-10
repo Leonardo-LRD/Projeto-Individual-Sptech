@@ -68,7 +68,7 @@ function buscarMusicasFavoritas() {
             musica.titulo, 
             COUNT(fk_musica) AS votos 
                 from usuario 
-                    JOIN musica ON fk_musica = id_musica GROUP BY fk_musica;
+                    JOIN musica ON fk_musica = id_musica GROUP BY fk_musica ORDER BY titulo DESC;
     `
 
     console.log("Executando a instrução SQL: \n" + instrucaoSql);

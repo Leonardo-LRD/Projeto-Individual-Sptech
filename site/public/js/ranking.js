@@ -80,8 +80,9 @@ function plotarGrafico(resposta) {
             {
                 yAxisID: 'y-vote',
                 label: 'Número de Votos',
-                borderColor: '#32B9CD',
-                backgroundColor: '#32b9cd8f',
+                borderColor: '#fff',
+                backgroundColor: '#000000bd',
+                hoverBackgroundColor: '#fff',
                 fill: true,
                 data: []
             }
@@ -98,6 +99,9 @@ function plotarGrafico(resposta) {
     console.log(JSON.stringify(dados));
 
     var ctx = canvas_grafico.getContext('2d');
+
+    // canvas_grafico.config.options.scales.x.ticks.color = '#fff';
+
     window.grafico_linha = Chart.Bar(ctx, {
         data: dados,
         options: {
@@ -107,9 +111,15 @@ function plotarGrafico(resposta) {
             stacked: false,
             title: {
                 display: false,
-                text: 'Dados capturados'
+                text: 'Músicas Favoritas dos Usuários'
             },
             scales: {
+                // x: {
+                //     ticks: {
+                //         color: '#fff',
+                //     }
+                // },
+
                 yAxes: [{
                     type: 'linear',
                     display: false,

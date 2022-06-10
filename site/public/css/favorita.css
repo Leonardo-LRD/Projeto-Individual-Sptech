@@ -15,11 +15,15 @@
 
 /* ================================== MENU ================================== */
 header {
-    padding-right: 0.5em;
+    padding-right: 1.5em;
     justify-content: flex-end;
     position: absolute;
     /* caso fique ruim no notebook, aumentar fonte */
     font-size: 20px;
+}
+
+header .logo {
+    margin-left: 8.5vw;
 }
 /* ================================== MENU ================================== */
 
@@ -29,6 +33,7 @@ header {
     height: 100vh;
     background-image:url("../assets/img/favorita.jpg");
     display: flex;
+    background-attachment: local;
     align-items: center;
     justify-content: center;
 }

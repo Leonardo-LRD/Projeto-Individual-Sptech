@@ -91,6 +91,14 @@ CREATE TABLE usuario (
 -- | fk_musica  | int         | YES  | MUL | NULL    |                |
 -- +------------+-------------+------+-----+---------+----------------+
 
+-- CADASTROS
+INSERT INTO usuario (nome, email, senha, fk_musica) VALUES
+('Guilherme', 'guilherme@email.com', 'guilherme@email.com', 10),
+('Alexandre', 'ale@email.com', 'ale@email.com', 14),
+('Fernando', 'fernando@email.com', 'fernando@email.com', 19),
+('Matheus', 'matheus@email.com', 'fernando@email.com', 7),
+('David Lucca', 'david@email.com', 'david@email.com', 3);
+
 -- 150 VOTOS ALEATÓRIOS
 INSERT INTO usuario (nome, email, senha, fk_musica) VALUES 
 ('Voto', 'voto@email.com', 'voto@email.com', FLOOR(RAND() * (24 - 1 + 1)) + 1),

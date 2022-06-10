@@ -22,11 +22,15 @@ html {
 
 /* ================================== MENU ================================== */
 header {
-    padding-right: 0.5em;
+    padding-right: 1.5em;
     justify-content: flex-end;
     position: absolute;
     /* caso fique ruim no notebook, aumentar fonte */
     font-size: 20px;
+}
+
+header .logo {
+    margin-left: 8.5vw;
 }
 /* ================================== MENU ================================== */
 
@@ -54,6 +58,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* decidir qual efeito fica melhor */
+    /* background-attachment: local; */
 }
 
 .conteudo {
