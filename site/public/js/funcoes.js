@@ -1,3 +1,12 @@
+// avatar ramdomico
+function changeAvatar() {
+    var profile_img = document.getElementById("profile_img");
+    var idAvatar = parseInt((Math.random() * 5) + 1);
+    
+    profile_img.src = `assets/prof_img/${idAvatar}.png`;
+}
+
+
 // sessão
 function validarSessao() {
     // aguardar();
@@ -6,13 +15,11 @@ function validarSessao() {
     var nome = sessionStorage.NOME_USUARIO;
 
     var b_usuario = document.getElementById("b_usuario");
-    // var c_usuario = document.getElementById("c_usuario");
 
     if (email != null && nome != null) {
         // window.alert(`Seja bem-vindo, ${nome}!`);
         b_usuario.innerHTML = nome;
-        // c_usuario.innerHTML = nome;
-
+        changeAvatar();
         // finalizarAguardar();
     } 
     else {

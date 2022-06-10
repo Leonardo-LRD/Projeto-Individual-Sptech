@@ -83,6 +83,7 @@ a {
 }
 .conteudo figure img {
     /* width: 80%; */
+    /* display: none; */
     height: 60vh;
     border-radius: 0.1em;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -95,6 +96,25 @@ a {
 }
 .conteudo figure img:hover {
     transform: rotateX(11deg) rotateY(16deg) rotateZ(356deg);
+}
+.conteudo figure video {
+    height: 80vh;
+    border-radius: 0.1em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 10px 30px hsla(0, 0%, 0%, 0.9);
+    /* box-shadow: 3px 3px 30px hsla(0, 0%, 0%, 0.9); */
+    transform: rotate(0);
+    filter: grayscale(50%);
+}
+.conteudo figure video:hover {
+    transform: rotateX(11deg) rotateY(16deg) rotateZ(356deg);
+}
+
+.direita i {
+    padding-left: 1em;
+    cursor: pointer;
 }
 
 #section_skt .conteudo {
