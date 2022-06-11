@@ -98,9 +98,7 @@ function plotarGrafico(resposta) {
 
     console.log(JSON.stringify(dados));
 
-    var ctx = canvas_grafico.getContext('2d');
-
-    // canvas_grafico.config.options.scales.x.ticks.color = '#fff';
+    var ctx = document.getElementById('canvas_grafico').getContext('2d');
 
     window.grafico_linha = Chart.Bar(ctx, {
         data: dados,
@@ -114,7 +112,7 @@ function plotarGrafico(resposta) {
                 text: 'Músicas Favoritas dos Usuários'
             },
             scales: {
-                // x: {
+                                // x: {
                 //     ticks: {
                 //         color: '#fff',
                 //     }
