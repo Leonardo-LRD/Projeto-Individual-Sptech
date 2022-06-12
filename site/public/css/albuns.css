@@ -24,7 +24,7 @@ html {
 header {
     padding-right: 1.5em;
     justify-content: flex-end;
-    position: absolute;
+    /* position: absolute; */
     /* caso fique ruim no notebook, aumentar fonte */
     font-size: 20px;
 }
@@ -154,12 +154,12 @@ figure img:hover {
     align-items: flex-end;
     flex-direction: row;
     justify-content: center;
-    /* position absolute */
-
-
     width: 50%;
     height: 100%;
     text-align: end;
+}
+#album2 .conteudo .e {
+    margin-left: 9em;
 }
 #album2 .conteudo .direita {
     display: flex;
@@ -171,7 +171,7 @@ figure img:hover {
 
 #album3 .conteudo .direita {
     flex-direction: column;
-    font-size: 22px;
+    /* font-size: 23px; */
 }
 
 #album4 .conteudo .esquerda {
@@ -182,7 +182,7 @@ figure img:hover {
     width: 50%;
     height: 100%;
     text-align: end;
-    font-size: 23px;
+    /* font-size: 23px; */
 }
 #album4 .conteudo .direita {
     display: flex;
